@@ -30,7 +30,7 @@ const Auth = () => {
                                         label="Username"
                                         id="username"
                                         value={usernameValue}
-                                        onChange={(ev) => {setUsernameValue(ev.target.value)}}
+                                        onChange={(ev: any) => {setUsernameValue(ev.target.value)}}
                                     />
                                 )
                             }
@@ -38,14 +38,14 @@ const Auth = () => {
                                 label="Email"
                                 id="email"
                                 value={emailValue}
-                                onChange={(ev) => {setEmailValue(ev.target.value)}}
+                                onChange={(ev: any) => {setEmailValue(ev.target.value)}}
                                 type="email"
                             />
                             <Input 
                                 label="Password"
                                 id="password"
                                 value={passwordValue}
-                                onChange={(ev) => {setPasswordValue(ev.target.value)}}
+                                onChange={(ev: any) => {setPasswordValue(ev.target.value)}}
                             />
                             <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700">
                                 {variant === 'login' ? 'Login' : 'Sign up'}
